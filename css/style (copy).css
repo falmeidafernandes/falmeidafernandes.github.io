@@ -110,12 +110,13 @@ a:focus, a:hover {
 	letter-spacing: 5px;
     margin: 2em 0;
 }
-.banner-info-w3l a {
+.banner-info-w3l h4 a {
     color: #fff;
     font-size: 0.8em;
     text-align: center;
     font-weight: 400;
     display: inherit;
+    text-transform: uppercase;
     letter-spacing: 2px;
     border: 1px solid #fff;
     width: 20%;
@@ -129,7 +130,7 @@ a:focus, a:hover {
 	-moz-transition: 0.5s all;
 	-ms-transition: 0.5s all;
 }
-.banner-info-w3l a:hover {
+.banner-info-w3l h4 a:hover {
     background: #58008c;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -1252,7 +1253,7 @@ textarea {
 	.banner-info-w3l h3 {
 		margin: 1.6em 0;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		letter-spacing: 1px;
 		width: 20%;
 		margin: 1.5em auto;
@@ -1344,7 +1345,7 @@ textarea {
 	.logo-w3layouts {
 		padding: 1em 0;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		margin: 1.2em auto;
 	}
 	.banner-info-w3l h3 {
@@ -1359,7 +1360,7 @@ textarea {
 	ul.nav.navbar-nav.navbar-right.margin-top li {
 		margin: 0px 7px 0px 0px;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		width: 20%;
 		padding: 0.6em;
 	}
@@ -1430,7 +1431,7 @@ textarea {
 	.banner-info-w3l h3 {
 		margin: 1.3em 0;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		padding: 0.65em;
 		font-size: 0.75em;
 	}
@@ -1454,7 +1455,7 @@ textarea {
 	.banner-info-w3l h2 {
 		font-size: 1.6em;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		font-size: 0.7em;
 	}
 	.banner-agile {
@@ -1514,7 +1515,7 @@ textarea {
 	.banner-info-w3l h2 {
 		font-size: 1.5em;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		margin: 1.1em auto;
 	}
 	.banner-info-w3l h3 {
@@ -1619,7 +1620,7 @@ textarea {
 	.banner-info-w3l h2 {
 		font-size: 1.35em;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		width: 20%;
 	}
 	.services-grids {
@@ -1656,7 +1657,7 @@ textarea {
 	.banner-info-w3l {
 		padding: 0.75em 0 0;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		width: 25%;
 	}
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
@@ -1693,7 +1694,7 @@ textarea {
 	.cl-effect-2 a span {
 		font-size: 16px;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		width: 30%;
 		padding: 0.6em;
 	}
@@ -1884,13 +1885,13 @@ textarea {
 	.banner-info-w3l h3 {
 		letter-spacing: 4px;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		width: 35%;
 	}
 	.banner-info-w3l h3 {
 		margin: 1em 0;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		margin: 1em auto;
 	}
 	.navbar-toggle {
@@ -1991,7 +1992,7 @@ textarea {
 	.work-info h5 {
 		padding: 9px 23px;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		width: 40%;
 	}
 	.work-info h4 {
@@ -2079,7 +2080,7 @@ textarea {
 	.logo-w3layouts h1 a {
 		font-size: 0.75em;
 	}
-	.banner-info-w3l a {
+	.banner-info-w3l h4 a {
 		width: 50%;
 		margin: 0.8em auto;
 	}
