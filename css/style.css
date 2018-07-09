@@ -110,7 +110,7 @@ a:focus, a:hover {
 	letter-spacing: 5px;
     margin: 2em 0;
 }
-.banner-info-w3l h4 a {
+.banner-info-w3l a {
     color: #fff;
     font-size: 0.8em;
     text-align: center;
@@ -129,7 +129,7 @@ a:focus, a:hover {
 	-moz-transition: 0.5s all;
 	-ms-transition: 0.5s all;
 }
-.banner-info-w3l h4 a:hover {
+.banner-info-w3l a:hover {
     background: #58008c;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
