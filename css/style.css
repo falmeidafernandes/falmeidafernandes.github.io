@@ -280,8 +280,12 @@ span.glyphicon.glyphicon-search.edit {
     letter-spacing: 1px;
     margin-top: 10px;
 }
+
 .agile-about-right-img img {
     width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact {
@@ -1157,6 +1161,9 @@ textarea {
 	}
 }
 @media(max-width: 1280px){
+    .banner-info-w3l a {
+        width: 25%;
+    }
 	.logo-w3layouts h1 a {
 		font-size: 1.2em;
 	}
@@ -1205,6 +1212,9 @@ textarea {
 
 }
 @media(max-width: 1024px){
+    .banner-info-w3l a {
+        width: 30%;
+    }
 	.logo-w3layouts h1 a {
 		font-size: 1.2em;
 	}
@@ -1421,6 +1431,9 @@ textarea {
 	}
 }
 @media(max-width: 768px){
+    .banner-info-w3l a {
+        width: 35%;
+    }
 	.logo-w3layouts h1 a {
 		font-size: 1.05em;
 	}
@@ -1554,6 +1567,9 @@ textarea {
 	}
 }
 @media(max-width: 640px){
+    .banner-info-w3l a {
+        width: 35%;
+    }
 	.banner-agile {
 		min-height: 166px;
 	}
@@ -1610,6 +1626,9 @@ textarea {
 	}
 }
 @media(max-width: 600px){
+    .banner-info-w3l a {
+        width: 40%;
+    }
 	.logo-w3layouts h1 a {
 		letter-spacing: 1px;
 	}
@@ -1686,6 +1705,9 @@ textarea {
 	}
 }
 @media(max-width: 480px){
+    .banner-info-w3l a {
+        width: 50%;
+    }
 	.logo-w3layouts h1 a {
 		letter-spacing: 0px;
 		font-size: 0.85em;
@@ -2076,6 +2098,9 @@ textarea {
 	}
 }
 @media(max-width: 320px){
+    .banner-info-w3l a {
+        width: 60%;
+    }
 	.logo-w3layouts h1 a {
 		font-size: 0.75em;
 	}
