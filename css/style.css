@@ -74,7 +74,7 @@ a:focus, a:hover {
 	margin:0
 }
 .banner-agile {
-	background: url(../images/bg.jpg) no-repeat 0px 0px;
+	background: url(../images/bg2.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -96,19 +96,22 @@ a:focus, a:hover {
 .banner-info-w3l h2 {
     color: #fff;
     font-size: 2.5em;
-    text-align: center;
-    margin: 0;
+    text-align: right;
+    margin-top: 0.4em;
+    text-shadow: 2px 2px #222222;
+    margin-bottom: 1em;
     font-weight: 350;
     letter-spacing: 3px;
     text-transform: none;
 }
 .banner-info-w3l h3 {
     color: #fff;
-    font-size: 1em;
-    text-align: center;
+    font-size: 2em;
+    text-align: right;
     font-weight: 100;
+    text-shadow: 2px 2px #222222;
 	letter-spacing: 5px;
-    margin: 2em 0;
+    margin: 0em 0;
 }
 .banner-info-w3l a {
     color: #fff;
@@ -121,7 +124,9 @@ a:focus, a:hover {
     width: 20%;
     padding: 0.7em;
 	background: #000;
-    margin: 2em auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 80%;
 	font-family: 'Nunito', sans-serif;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -284,8 +289,24 @@ span.glyphicon.glyphicon-search.edit {
 .agile-about-right-img img {
     width: 100%;
     display: block;
+    padding: 2em;
     margin-left: auto;
     margin-right: auto;
+}
+
+.agile-about-right-img h3 {
+    text-align: center;
+    color: #58008c;
+    font-size: 3em;
+}
+
+.first-letter{
+    color: #58008c;
+}
+.agile-about-right-img h4 {
+    text-align: center;
+    color: #666666;
+    font-size: 2em;
 }
 
 .contact {
@@ -315,7 +336,7 @@ h3.agile-contact {
 }
 
 .w3l-grids-about , .services-w3ls-row, .gallery_gds, .contact-agile, .wthreeskills-grids, .bar_group.group_ident-1, .tabs, .load_more.load_more{
-    margin-top: 3em;
+    margin-top: 1em;
 }
 
 /*-- effect --*/
@@ -1124,9 +1145,6 @@ textarea {
 	.logo-w3layouts h1 a {
 		font-size: 1.2em;
 	}
-	.banner-info-w3l h2 {
-		font-size: 2.4em;
-	}
 }
 @media(max-width: 1366px){
 	.banner-agile {
@@ -1140,9 +1158,6 @@ textarea {
 	}
 	.navbar-default {
 		width: 100%;
-	}
-	.banner-info-w3l h2 {
-		font-size: 2.3em;
 	}
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		font-size: 2.8em;
@@ -1161,8 +1176,18 @@ textarea {
 	}
 }
 @media(max-width: 1280px){
+    .agile-about-right-img img {
+        margin-top: 5em;
+    }
+    .agile-about-right-img h3 {
+        font-size: 2.5em;
+    }
+    .agile-about-right-img h4 {
+        font-size: 1.8em;
+    }
     .banner-info-w3l a {
         width: 25%;
+        margin-left: 75%;
     }
 	.logo-w3layouts h1 a {
 		font-size: 1.2em;
@@ -1170,18 +1195,15 @@ textarea {
 	.banner-agile {
 		min-height: 300px;
 	}
-	.banner-info-w3l h2 {
-		font-size: 2.2em;
-	}
-	.banner-info-w3l h3 {
-		margin: 1.7em 0;
-	}
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		font-size: 2.7em;
 		letter-spacing: 1px;
 	}
 }
 @media(max-width: 1080px){
+    .agile-about-right-img img {
+        margin-top: 0em;
+    }
 	.banner-agile {
 		min-height: 253px;
 	}
@@ -1212,8 +1234,12 @@ textarea {
 
 }
 @media(max-width: 1024px){
+	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
+		padding-top: 10px;
+	}
     .banner-info-w3l a {
         width: 30%;
+        margin-left: 70%;
     }
 	.logo-w3layouts h1 a {
 		font-size: 1.2em;
@@ -1225,7 +1251,12 @@ textarea {
 		padding: 1.2em 0;
 	}
 	.banner-info-w3l h2 {
-		font-size: 2.05em;
+		font-size: 2.3em;
+		margin-top: 0.4em;
+		margin-bottom: 1.5em;
+	}
+	.banner-info-w3l h3 {
+		font-size: 1.8em;
 	}
 	.w3ls-agile-left-info h4, .social-info h4 {
 		letter-spacing: 1px;
@@ -1256,12 +1287,20 @@ textarea {
 	}
 }
 @media(max-width: 991px){
-	.banner-info-w3l h2 {
-		font-size: 2em;
-	}
-	.banner-info-w3l h3 {
-		margin: 1.6em 0;
-	}
+    .agile-about-right-img img {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 1.5em;
+    }
+    .agile-about-right-img h3 {
+        font-size: 2.5em;
+        margin-bottom: 0.2em;
+    }
+
+    .agile-about-right-img h4 {
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
 	.banner-info-w3l h4 a {
 		letter-spacing: 1px;
 		width: 20%;
@@ -1281,9 +1320,6 @@ textarea {
 	}
 	.w3ls-agile-left-info {
 		padding: 0.3em 0;
-	}
-	.agile-about-right-img img {
-		margin-bottom: 2em;
 	}
 	.wthreeskills-grid.wthreeskills-grid-1 {
 		margin-top: 4.5em;
@@ -1334,7 +1370,7 @@ textarea {
 		width: 50%;
 	}
 	.agile-about-right-img img {
-		width: 40%;
+		width: 50%;
 	}
 	.add-w3ls2 h5 {
 		font-size: 1.3em;
@@ -1357,9 +1393,6 @@ textarea {
 	.banner-info-w3l h4 a {
 		margin: 1.2em auto;
 	}
-	.banner-info-w3l h3 {
-		margin: 1.4em 0;
-	}
 	.banner-agile {
 		    min-height: 215px;
 	}
@@ -1379,9 +1412,6 @@ textarea {
 	.navbar-default {
 		width: 100%;
 	}
-	.banner-info-w3l h2 {
-		font-size: 1.9em;
-	}
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		font-size: 2.5em;
 		letter-spacing: 0px;
@@ -1390,7 +1420,7 @@ textarea {
 		padding: 3em 0;
 	}
 	.w3l-grids-about, .services-w3ls-row, .gallery_gds, .contact-agile, .wthreeskills-grids, .bar_group.group_ident-1, .tabs, .load_more.load_more {
-		margin-top: 2em;
+		margin-top: 1em;
 	}
 	.contact-left-agile {
 		float: left;
@@ -1431,17 +1461,18 @@ textarea {
 	}
 }
 @media(max-width: 768px){
+    .agile-about-right-img h3 {
+        font-size: 2em;
+    }
+    .agile-about-right-img h4 {
+        font-size: 1.6em;
+    }
     .banner-info-w3l a {
         width: 35%;
+        margin-left: 65%;
     }
 	.logo-w3layouts h1 a {
 		font-size: 1.05em;
-	}
-	.banner-info-w3l h2 {
-		font-size: 1.7em;
-	}
-	.banner-info-w3l h3 {
-		margin: 1.3em 0;
 	}
 	.banner-info-w3l h4 a {
 		padding: 0.65em;
@@ -1465,7 +1496,12 @@ textarea {
 		font-size: 1em;
 	}
 	.banner-info-w3l h2 {
-		font-size: 1.6em;
+		font-size: 2em;
+		margin-top: 0.4em;
+		margin-bottom: 1.5em;
+	}
+	.banner-info-w3l h3 {
+		font-size: 1.7em;
 	}
 	.banner-info-w3l h4 a {
 		font-size: 0.7em;
@@ -1519,19 +1555,13 @@ textarea {
 		font-size: 0.9em;
 	}
 	.logo-w3layouts {
-		padding: 0.8em 0;
+		padding: 1em 0;
 	}
 	.banner-agile {
 		min-height: 175px;
 	}
-	.banner-info-w3l h2 {
-		font-size: 1.5em;
-	}
 	.banner-info-w3l h4 a {
 		margin: 1.1em auto;
-	}
-	.banner-info-w3l h3 {
-		margin: 1.2em 0;
 	}
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		font-size: 2.2em;
@@ -1569,6 +1599,7 @@ textarea {
 @media(max-width: 640px){
     .banner-info-w3l a {
         width: 35%;
+        margin-left: 65%;
     }
 	.banner-agile {
 		min-height: 166px;
@@ -1576,14 +1607,11 @@ textarea {
 	.banner-info-w3l {
 		padding: 1.125em 0 0;
 	}
-	.banner-info-w3l h2 {
-		font-size: 1.4em;
-	}
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		font-size: 2.1em;
 	}
 	.w3l-grids-about, .services-w3ls-row, .gallery_gds, .contact-agile, .wthreeskills-grids, .bar_group.group_ident-1, .tabs, .load_more.load_more {
-		margin-top: 1.5em;
+		margin-top: 2em;
 	}
 	.w3ls-agile-left-info h4, .social-info h4 {
 		font-size: 1.5em;
@@ -1628,15 +1656,21 @@ textarea {
 @media(max-width: 600px){
     .banner-info-w3l a {
         width: 40%;
+        margin-left: 60%;
     }
 	.logo-w3layouts h1 a {
 		letter-spacing: 1px;
 	}
 	.logo-w3layouts {
-		padding: 0.5em 0;
+		padding: 1em 0;
 	}
 	.banner-info-w3l h2 {
-		font-size: 1.35em;
+		font-size: 1.9em;
+		margin-top: 0.4em;
+		margin-bottom: 1.5em;
+	}
+	.banner-info-w3l h3 {
+		font-size: 1.6em;
 	}
 	.banner-info-w3l h4 a {
 		width: 20%;
@@ -1701,12 +1735,24 @@ textarea {
 		font-size: 0.9em;
 	}
 	.banner-info-w3l h2 {
-		font-size: 1.3em;
+		font-size: 1.8em;
+		margin-top: 0.2em;
+		margin-bottom: 1.7em;
+	}
+	.banner-info-w3l h3 {
+		font-size: 1.5em;
 	}
 }
 @media(max-width: 480px){
+    .agile-about-right-img h3 {
+        font-size: 1.7em;
+    }
+    .agile-about-right-img h4 {
+        font-size: 1.3em;
+    }
     .banner-info-w3l a {
         width: 50%;
+        margin-left: 50%;
     }
 	.logo-w3layouts h1 a {
 		letter-spacing: 0px;
@@ -1725,9 +1771,19 @@ textarea {
 	.agile-about-right-img img {
 		width: 60%;
 	}
+	.banner-info-w3l a {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
 	.banner-info-w3l h2 {
-		font-size: 1.2em;
-		letter-spacing: 2px;
+		font-size: 1.6em;
+		margin-top: 0.2em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	.banner-info-w3l h3 {
+		font-size: 1.3em;
+		text-align: center;
 	}
 	.filtr-item {
 		width: 100% !important;
@@ -1743,6 +1799,7 @@ textarea {
 	}
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		font-size: 1.9em;
+		padding-top: 10px;
 	}
 	#about, .services, #portfolio, .wthreeskills, .aitsresumewthree {
 		padding: 2em 0;
@@ -1966,7 +2023,7 @@ textarea {
 }
 @media(max-width: 384px){
 	.logo-w3layouts {
-		padding: 0.3em 0;
+		padding: 1em 0;
 	}
 	.agile-about-right-img img {
 		width: 80%;
@@ -1987,7 +2044,14 @@ textarea {
 		height: 48px;
 	}
 	.banner-info-w3l h2 {
-		font-size: 1em;
+		font-size: 1.4em;
+		margin-top: 0.3em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	.banner-info-w3l h3 {
+		font-size: 1.2em;
+		text-align: center;
 	}
 	.wthreeskills-grid-2 h4, .wthreeskills-grid-1 h4 {
 		font-size: 1.3em;
@@ -2100,6 +2164,8 @@ textarea {
 @media(max-width: 320px){
     .banner-info-w3l a {
         width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
 	.logo-w3layouts h1 a {
 		font-size: 0.75em;
@@ -2125,6 +2191,7 @@ textarea {
 	}
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		font-size: 1.7em;
+		padding-top: 10px;
 	}
 	#about, .services, #portfolio, .wthreeskills, .aitsresumewthree {
 		padding: 1.5em 0;
