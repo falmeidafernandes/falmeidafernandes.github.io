@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 /*-- Reset Code --*/
 body {
 	padding:0;
-    padding-top: 53px;
+    padding-top: 30px;
 	margin:0;
 	background:#FFF;
 	font-family: 'Nunito', sans-serif;
@@ -57,7 +57,7 @@ a:focus, a:hover {
 
 /*-- header-starts-here --*/
 .logo-w3layouts {
-    text-align: center;
+    text-align: left;
     padding: 0.5em 0;
     background: rgba(0, 0, 0, 0.62);
 }
@@ -80,7 +80,7 @@ a:focus, a:hover {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-ms-background-size: cover;
-	min-height:750px;
+	min-height:100px;
 }
 .banner-info-w3l  {
 	padding:3em 0 0;
@@ -147,7 +147,6 @@ a:focus, a:hover {
     background:#58008c;
 }
 .navbar-default {
-	background-color:Transparent;
 	border:none;
 	margin: 0;
 	border-radius: 0;
@@ -167,7 +166,7 @@ a:focus, a:hover {
 	text-decoration:none;
 }
 ul.nav.navbar-nav.navbar-right.margin-top {
-	margin: 0.5em;
+	margin: 0em;
 	padding:0;
 }
 ul.nav.navbar-nav.navbar-right.margin-top li{
@@ -184,7 +183,7 @@ ul.nav.navbar-nav.navbar-right.margin-top li{
 	background-color: #0B0354;
 }
 .nav > li > a {
-    padding: 10px 27px !important;
+    padding: 5px 27px !important;
 }
 span.caret:hover {
 	color: #00BFF3;
@@ -1120,27 +1119,21 @@ textarea {
 /*-- responsive-starts-here --*/
 
 @media(max-width: 1680px){
-	.banner-agile {
-		min-height: 382px;
-	}
 	.banner-info-w3l {
-		padding: 3.5em 0 0;
+		padding: 2.5em 0 0;
 	}
 }
 @media(max-width: 1600px){
-	.banner-agile {
-		min-height:375px;
-	}
 	.banner-info-w3l  {
-		padding:3em 0 0;
+		padding:2.5em 0 0;
 	}
 }
 @media(max-width: 1440px){
 	.banner-agile {
-		min-height: 338px;
+		min-height: 100px;
 	}
 	.banner-info-w3l {
-		padding: 3em 0 0;
+		padding: 2em 0 0;
 	}
 	.logo-w3layouts h1 a {
 		font-size: 1.2em;
@@ -1151,7 +1144,7 @@ textarea {
 		min-height: 316px;
 	}
 	.banner-info-w3l {
-		padding: 2.5em 0 0;
+		padding: 2em 0 0;
 	}
 	.cl-effect-2 a span {
 		font-size: 18px;
@@ -1208,7 +1201,7 @@ textarea {
 		min-height: 253px;
 	}
 	.banner-info-w3l {
-		padding: 1.5em 0 0;
+		padding: 2em 0 0;
 	}
 	.nav > li > a {
 		padding: 9px 25px !important;
@@ -1397,7 +1390,7 @@ textarea {
 		    min-height: 215px;
 	}
 	.banner-info-w3l {
-		    padding: 1.75em 0 0
+		    padding: 2em 0 0
 	}
 	ul.nav.navbar-nav.navbar-right.margin-top li {
 		margin: 0px 7px 0px 0px;
@@ -1448,7 +1441,7 @@ textarea {
     padding-top: 40px;
     }
 	.nav > li > a {
-		padding: 11px 19px !important;
+		padding: 5px 19px !important;
 	}
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: #fff !important;
@@ -1475,7 +1468,7 @@ textarea {
 		font-size: 1.05em;
 	}
 	.banner-info-w3l h4 a {
-		padding: 0.65em;
+		padding: 2em;
 		font-size: 0.75em;
 	}
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
@@ -1510,7 +1503,7 @@ textarea {
 		min-height: 188px;
 	}
 	.banner-info-w3l {
-		padding: 1.25em 0 0;
+		padding: 2.5em 0 0;
 	}
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		font-size: 2.3em;
@@ -1605,7 +1598,7 @@ textarea {
 		min-height: 166px;
 	}
 	.banner-info-w3l {
-		padding: 1.125em 0 0;
+		padding: 2.5em 0 0;
 	}
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		font-size: 2.1em;
@@ -1707,7 +1700,7 @@ textarea {
 		min-height: 147px;
 	}
 	.banner-info-w3l {
-		padding: 0.75em 0 0;
+		padding: 2em 0 0;
 	}
 	.banner-info-w3l h4 a {
 		width: 25%;
@@ -1763,7 +1756,7 @@ textarea {
 	}
 	.banner-info-w3l h4 a {
 		width: 30%;
-		padding: 0.6em;
+		padding: 2em;
 	}
 	.banner-agile {
 		min-height: 130px;
@@ -1973,7 +1966,7 @@ textarea {
 		margin: 1em auto;
 	}
 	.navbar-toggle {
-		padding: 8px 8px;
+		padding: 5px 8px;
 	}
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		font-size: 1.85em;
@@ -2181,7 +2174,7 @@ textarea {
 		min-height: 114px;
 	}
 	.banner-info-w3l {
-		padding: 0.5em 0 0;
+		padding: 2em 0 0;
 	}
 	.cl-effect-2 a span {
 		font-size: 16px;
@@ -2307,7 +2300,7 @@ textarea {
 		width: 79%;
 	}
 	.navbar-toggle {
-		padding: 7px 7px;
+		padding: 5  px 7px;
 	}
 	.contact-left-agile {
 		min-height: 328px;
