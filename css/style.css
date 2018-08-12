@@ -56,6 +56,71 @@ a:focus, a:hover {
 /*-- //Reset Code --*/
 
 /*-- header-starts-here --*/
+
+.languagepicker {
+	background-color: #58008c;
+	display: inline-block;
+	padding: 0;
+	height: 50px;
+	overflow: hidden;
+	transition: all .3s ease;
+	margin: 0 50px 10px 0;
+	vertical-align: top;
+	float: left;
+	position:absolute; 
+    top:30px; 
+    left:0px;
+}
+
+.languagepicker:hover {
+	/* don't forget the 1px border */
+	height: 101px;
+}
+
+.languagepicker a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+.languagepicker li {
+	display: block;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-top: 5px;
+	line-height: 40px;
+	border-top: 1px solid #58008c;
+}
+
+.languagepicker li:hover{
+	background-color: #082;
+}
+
+.languagepicker a:first-child li {
+	border: none;
+	background: #58008c !important;
+}
+
+.languagepicker a:first-child li:hover {
+	background: #082 !important;
+}
+
+.languagepicker li img {
+	margin-right: 5px;
+}
+
+.roundborders {
+	border-radius: 5px;
+}
+
+.large:hover {
+	/* 
+	don't forget the 1px border!
+	The first language is 40px heigh, 
+	the others are 41px
+	*/
+	height: 137px;
+}
+
 .logo-w3layouts {
     text-align: left;
     padding: 0.5em 0;
@@ -263,6 +328,12 @@ span.glyphicon.glyphicon-search.edit {
 /*-- header-nav --*/
 /*-- header-ends-here --*/
 
+/*-- Project(About)-starts-here --*/
+.project-agile-left-info p {
+    text-align: justify;
+}
+
+
 /*-- About-starts-here --*/
 #about,.services,#portfolio, .wthreeskills, .aitsresumewthree{
     padding: 1em 0;
@@ -277,6 +348,10 @@ span.glyphicon.glyphicon-search.edit {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+.w3ls-agile-right {
+}
+
 .w3ls-agile-left-info p {
     color: #777;
     font-size: 1em;
@@ -308,6 +383,9 @@ span.glyphicon.glyphicon-search.edit {
     font-size: 2em;
 }
 
+.agile-about-right-img figcaption {
+    text-align: center;
+}
 .contact {
 padding-top: 15px;
 }
@@ -317,6 +395,15 @@ h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskil
     color: #58008c;
     padding-top: 30px;
     font-size: 3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h4.w3l_head{
+    text-align: center;
+    color: #000000;
+    padding-top: 15px;
+    font-size: 2em;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -816,11 +903,12 @@ li.aitsaitsresumewthreeli-1 {
 /*-- Work --*/
 .work-left {
 	text-align: right;
+	border-right: 1px solid #58008c;
 	padding: 1em 13px 0 0;
 }
 
 .work-right {
-	border-left: 1px solid #999;
+	border-left: 1px solid #58008c;
 	padding: 1em 0 2em 13px;
 	text-align: left;
 }
@@ -1155,6 +1243,9 @@ textarea {
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		font-size: 2.8em;
 	}
+	h4.w3l_head{
+	    font-size: 1.9em;
+    }
 	.w3ls-agile-left-info h4, .social-info h4 {
 		font-size: 1.7em;
 	}
@@ -1192,6 +1283,9 @@ textarea {
 		font-size: 2.7em;
 		letter-spacing: 1px;
 	}
+	h4.w3l_head{
+	    font-size: 1.8em;
+    }
 }
 @media(max-width: 1080px){
     .agile-about-right-img img {
@@ -1377,6 +1471,9 @@ textarea {
 
 }
 @media(max-width: 800px){
+    .languagepicker {
+        top: 50px;
+    }
 	.logo-w3layouts h1 a {
 		font-size: 1.1em;
 	}
@@ -1409,6 +1506,9 @@ textarea {
 		font-size: 2.5em;
 		letter-spacing: 0px;
 	}
+	h4.w3l_head{
+	    font-size: 1.6em;
+    }
 	#about, .services, #portfolio, .wthreeskills, .aitsresumewthree {
 		padding: 3em 0;
 	}
@@ -1696,6 +1796,9 @@ textarea {
 	}
 }
 @media(max-width: 568px){
+    .languagepicker {
+        top: 40px;
+    }
 	.banner-agile {
 		min-height: 147px;
 	}
@@ -1708,6 +1811,9 @@ textarea {
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		font-size: 2em;
 	}
+	h4.w3l_head{
+	    font-size: 1.3em;
+    }
 	.text-w3l {
 		width: 78%;
 	}
@@ -1737,6 +1843,9 @@ textarea {
 	}
 }
 @media(max-width: 480px){
+    .languagepicker {
+        top: 40px;
+    }
     .agile-about-right-img h3 {
         font-size: 1.7em;
     }
@@ -1840,59 +1949,62 @@ textarea {
 	.w3agile-servs-img .mission {
 		font-size: 1.5em;
 	}
-	.work-grid {
-		width: 100%;
-	}
-	.work-left {
-		height: 51px;
-		text-align: left;
-		padding: 0;
-	}
-	.work-info h4 {
-		padding: 10px 25px;
-		font-size: 14px;
-		margin-left: 90px;
-	}
-	.work-info p {
-		text-align: left;
-		line-height: 29px;
-	}
-	.work-right {
-		height: 129px;
-		text-align: right;
-		border: none;
-		padding: 0;
-	}
-	.work-info h5 {
-		position: absolute;
-		top: -51px;
-		right: 16%;
-		font-size: 14px;
-		margin-bottom: 0;
+/*	.work-grid {*/
+/*		width: 100%;*/
+/*	}*/
+/*	.work-left {*/
+/*		height: 51px;*/
+/*		text-align: left;*/
+/*		padding: 0;*/
+/*	}*/
+/*	.work-info h4 {*/
+/*		padding: 10px 25px;*/
+/*		font-size: 14px;*/
+/*		margin-left: 90px;*/
+/*	}*/
+/*	.work-info p {*/
+/*		text-align: left;*/
+/*		line-height: 29px;*/
+/*	}*/
+/*	.work-right {*/
+/*		height: 129px;*/
+/*		text-align: right;*/
+/*		border: none;*/
+/*		padding: 0;*/
+/*	}*/
+/*	.work-info h5 {*/
+/*		position: absolute;*/
+/*		top: -51px;*/
+/*		right: 16%;*/
+/*		font-size: 14px;*/
+/*		margin-bottom: 0;*/
+/*	}*/
+/*	.work-right.work-right2 {*/
+/*		height: 50px;*/
+/*		float: left;*/
+/*		text-align: left;*/
+/*	}*/
+/*	.work-info .work-right2 h4 {*/
+/*		margin-left: 235px;*/
+/*	}*/
+/*	.work-info .work-left2 h5 {*/
+/*		top: -51px;*/
+/*		right: 49%;*/
+/*	}*/
+/*	.work-left2 {*/
+/*		height: 126px;*/
 	}
 	.work-right.work-right2 {
-		height: 50px;
-		float: left;
-		text-align: left;
+		min-height: 0px;
 	}
-	.work-info .work-right2 h4 {
-		margin-left: 235px;
-	}
-	.work-info .work-left2 h5 {
-		top: -51px;
-		right: 49%;
-	}
-	.work-left2 {
-		height: 126px;
-	}
-	.work-right.work-right2 {
-		min-height: 50px;
-	}
-	.work-grid.work-left {
-		width: 100%;
-	}
-	.work-grid.work-right {
-		width: 100%;
+/*	.work-grid.work-left {*/
+/*		width: 100%;*/
+/*	}*/
+/*	.work-grid.work-right {*/
+/*		width: 100%;*/
+/*	}*/
+    work-right.work-right2 {
+		background: #00FF00;
 	}
 	#loadMore {
 		width: 27%;
@@ -1950,6 +2062,9 @@ textarea {
 	}
 }
 @media(max-width: 414px){
+    .languagepicker {
+        top: 30px;
+    }
 	.logo-w3layouts h1 a {
 		font-size: 0.8em;
 	}
@@ -2007,12 +2122,12 @@ textarea {
 	input[type="text"], input[type="email"], .contact-right-w3l textarea {
 		padding: 7px;
 	}
-	.work-right {
-		height: 135px;
-	}
-	.work-left2 {
-		height: 135px;
-	}
+/*	.work-right {*/
+/*		height: 135px;*/
+/*	}*/
+/*	.work-left2 {*/
+/*		height: 135px;*/
+/*	}*/
 }
 @media(max-width: 384px){
 	.logo-w3layouts {
@@ -2061,27 +2176,27 @@ textarea {
 	h5.univ {
 		right: 11% !important;
 	}
-	.work-info h5 {
-		right: 14.5%;
-	}
-	.work-info .work-right2 h4 {
-		margin-left: 186px;
-	}
-	.work-info h5 {
-		padding: 9px 23px;
-	}
+/*	.work-info h5 {*/
+/*		right: 14.5%;*/
+/*	}*/
+/*	.work-info .work-right2 h4 {*/
+/*		margin-left: 186px;*/
+/*	}*/
+/*	.work-info h5 {*/
+/*		padding: 9px 23px;*/
+/*	}*/
 	.banner-info-w3l h4 a {
 		width: 40%;
 	}
-	.work-info h4 {
-		padding: 10px 21px;
-	}
-	.work-info h4 {
-		margin-left: 42px;
-	}
-	.work-info h4 {
-		margin-left: 31px;
-	}
+/*	.work-info h4 {*/
+/*		padding: 10px 21px;*/
+/*	}*/
+/*	.work-info h4 {*/
+/*		margin-left: 42px;*/
+/*	}*/
+/*	.work-info h4 {*/
+/*		margin-left: 31px;*/
+/*	}*/
 	h5.sch {
 		right: 25.5%;
 	}
@@ -2117,15 +2232,15 @@ textarea {
 	.w3ls-agile-left-info h4, .social-info h4 {
 		font-size: 1.25em;
 	}
-	.work-info h5 {
-		right: 12%;
-	}
-	.work-info p {
-		line-height: 24px;
-	}
-	.work-info .work-right2 h4 {
-		margin-left: 181px;
-	}
+/*	.work-info h5 {*/
+/*		right: 12%;*/
+/*	}*/
+/*	.work-info p {*/
+/*		line-height: 24px;*/
+/*	}*/
+/*	.work-info .work-right2 h4 {*/
+/*		margin-left: 181px;*/
+/*	}*/
 	h5.univ {
 		right: 8.6% !important;
 	}
@@ -2186,6 +2301,9 @@ textarea {
 		font-size: 1.7em;
 		padding-top: 10px;
 	}
+	h4.w3l_head{
+	    font-size: 1.1em;
+    }
 	#about, .services, #portfolio, .wthreeskills, .aitsresumewthree {
 		padding: 1.5em 0;
 	}
@@ -2247,24 +2365,24 @@ textarea {
 	.w3agile-servs-img .mission {
 		font-size: 1.5em;
 	}
-	.work-info h4 {
-		padding: 9px 12px;
-		font-size: 13px;
-	}
-	.work-info h5 {
-		padding: 8px 13px;
-		font-size: 13px;
-	}
-	.work-info .work-right2 h4 {
-		margin-left: 153px;
-	}
-	.work-info p {
-		line-height: 23px;
-		font-size: 0.85em;
-	}
-	.work-info h4:before {
-		top: 6px;
-	}
+/*	.work-info h4 {*/
+/*		padding: 9px 12px;*/
+/*		font-size: 13px;*/
+/*	}*/
+/*	.work-info h5 {*/
+/*		padding: 8px 13px;*/
+/*		font-size: 13px;*/
+/*	}*/
+/*	.work-info .work-right2 h4 {*/
+/*		margin-left: 153px;*/
+/*	}*/
+/*	.work-info p {*/
+/*		line-height: 23px;*/
+/*		font-size: 0.85em;*/
+/*	}*/
+/*	.work-info h4:before {*/
+/*		top: 6px;*/
+/*	}*/
 	#loadMore {
 		width: 37%;
 		font-size: 0.83em;
