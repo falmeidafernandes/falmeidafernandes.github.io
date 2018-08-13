@@ -10,7 +10,7 @@ body {
 	padding:0;
     padding-top: 30px;
 	margin:0;
-	background:#FFF;
+	background:#110825;
 	font-family: 'Nunito', sans-serif;
 }
 body a {
@@ -26,6 +26,11 @@ body a:hover {
 }
 body a:focus, a:hover {
 	text-decoration: none;
+}
+.body-margin {
+    max-width: 1920px;
+	background:#fff;
+    margin: auto;
 }
 input[type="button"],input[type="submit"] {
 	transition:0.5s all;
@@ -350,6 +355,7 @@ span.glyphicon.glyphicon-search.edit {
 }
 
 .w3ls-agile-right {
+
 }
 
 .w3ls-agile-left-info p {
@@ -368,10 +374,14 @@ span.glyphicon.glyphicon-search.edit {
     margin-right: auto;
 }
 
+.w3ls-agile-right-img-frontpage{
+    margin-top: 2em;
+}
+
 .agile-about-right-img h3 {
     text-align: center;
     color: #58008c;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .first-letter{
@@ -1264,7 +1274,7 @@ textarea {
         margin-top: 5em;
     }
     .agile-about-right-img h3 {
-        font-size: 2.5em;
+        font-size: 2.4em;
     }
     .agile-about-right-img h4 {
         font-size: 1.8em;
@@ -1380,7 +1390,7 @@ textarea {
         margin-bottom: 1.5em;
     }
     .agile-about-right-img h3 {
-        font-size: 2.5em;
+        font-size: 2.2em;
         margin-bottom: 0.2em;
     }
 
@@ -1895,6 +1905,7 @@ textarea {
 	}
 	.banner-info-w3l h3 {
 		margin: 1.1em 0;
+        padding-top: 1em;
 	}
 	.nav > li > a {
 		padding: 9px 19px !important;
@@ -1907,7 +1918,7 @@ textarea {
 		padding: 2em 0;
 	}
 	.banner-info-w3l h3 {
-		font-size: 0.9em;
+		font-size: 1.2em;
 	}
 	.hovicon {
 		font-size: 1.85em;
@@ -2075,7 +2086,7 @@ textarea {
 		width: 35%;
 	}
 	.banner-info-w3l h3 {
-		margin: 1em 0;
+		margin: 1.2em 0;
 	}
 	.banner-info-w3l h4 a {
 		margin: 1em auto;
@@ -2130,6 +2141,9 @@ textarea {
 /*	}*/
 }
 @media(max-width: 384px){
+    .agile-about-right-img h3 {
+        font-size: 1.5em;
+    }
 	.logo-w3layouts {
 		padding: 1em 0;
 	}
@@ -2271,7 +2285,7 @@ textarea {
 }
 @media(max-width: 320px){
     .banner-info-w3l a {
-        width: 60%;
+        width: 65%;
         margin-left: auto;
         margin-right: auto;
     }
