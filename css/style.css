@@ -62,6 +62,21 @@ a:focus, a:hover {
 
 /*-- header-starts-here --*/
 
+.video_container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 3em;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .languagepicker {
 	background-color: #58008c;
 	display: inline-block;
@@ -1213,6 +1228,70 @@ textarea {
 }
 /*-- //to-top --*/
 
+/*project stars here*/
+
+.project-row-container {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.project-2 {
+    background: #f6f6f6;
+    margin-top: 20px;
+}
+
+.project-last{
+	background: url(../images/ser.jpg) no-repeat 0px 0px;
+    background-size: cover;
+}
+
+.project-last-head{
+    color: #eee !important;
+}
+
+.project-row {
+    background: #fff;
+    border: #ccc 1px solid;
+    margin-bottom: 6px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0px;
+    opacity: 0.9;
+}
+
+.project-row-handle {
+    cursor: pointer;
+    display: block;
+    color: #191919;
+    font-weight: normal;
+    font-size: 1.8em;
+    padding: 15px 30px 15px 30px;
+    line-height: 150%;
+    text-decoration: none;
+    outline: 0;
+}
+
+.project-row-handle:hover{
+    color: #58008c;
+    background: #eee;
+}
+.project-row.open .project-row-handle {
+   color:#58008c;
+   padding-top: 1em;
+   padding-left: 30px;
+}
+.project-row-content {
+    font-weight: normal;
+    line-height: 120%;
+    display: none;
+}
+
+.project-row-content p {
+    padding: 0 14px 10px 14px;
+}
+/*//project ends here*/
 
 /*-- responsive-starts-here --*/
 
@@ -1256,6 +1335,9 @@ textarea {
 	h4.w3l_head{
 	    font-size: 1.9em;
     }
+    .project-row-handle{
+        font-size: 1.7em;
+    }
 	.w3ls-agile-left-info h4, .social-info h4 {
 		font-size: 1.7em;
 	}
@@ -1295,6 +1377,9 @@ textarea {
 	}
 	h4.w3l_head{
 	    font-size: 1.8em;
+    }
+    .project-row-handle{
+        font-size: 1.6em;
     }
 }
 @media(max-width: 1080px){
@@ -1518,6 +1603,9 @@ textarea {
 	}
 	h4.w3l_head{
 	    font-size: 1.6em;
+    }
+    .project-row-handle{
+        font-size: 1.4em;
     }
 	#about, .services, #portfolio, .wthreeskills, .aitsresumewthree {
 		padding: 3em 0;
@@ -1823,6 +1911,9 @@ textarea {
 	}
 	h4.w3l_head{
 	    font-size: 1.3em;
+    }
+    .project-row-handle{
+        font-size: 1.2em;
     }
 	.text-w3l {
 		width: 78%;
@@ -2317,6 +2408,9 @@ textarea {
 	}
 	h4.w3l_head{
 	    font-size: 1.1em;
+    }
+    .project-row-handle{
+        font-size: 1.1em;
     }
 	#about, .services, #portfolio, .wthreeskills, .aitsresumewthree {
 		padding: 1.5em 0;
