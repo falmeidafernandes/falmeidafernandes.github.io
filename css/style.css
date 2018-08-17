@@ -6,11 +6,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
 /*-- Reset Code --*/
+
+
+:root {
+/*    --main-color: #58008c; */
+/*    --main-color: #59009e; */
+    --main-color: #330077;
+}
+
 body {
 	padding:0;
     padding-top: 30px;
 	margin:0;
-	background:#110825;
+	background:#050312;
 	font-family: 'Nunito', sans-serif;
 }
 body a {
@@ -52,7 +60,7 @@ ul {
 	padding:0;
 }
 label {
-	margin:0;
+	margin:0;   
 }
 a:focus, a:hover {
 	text-decoration: none;
@@ -61,6 +69,21 @@ a:focus, a:hover {
 /*-- //Reset Code --*/
 
 /*-- header-starts-here --*/
+
+.form-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 50%;
+}
+
+.form-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 
 .video_container {
     position: relative;
@@ -78,7 +101,7 @@ a:focus, a:hover {
 }
 
 .languagepicker {
-	background-color: #58008c;
+	background-color: var(--main-color);
 	display: inline-block;
 	padding: 0;
 	height: 50px;
@@ -108,7 +131,7 @@ a:focus, a:hover {
 	padding-right: 5px;
 	padding-top: 5px;
 	line-height: 40px;
-	border-top: 1px solid #58008c;
+	border-top: 1px solid var(--main-color);
 }
 
 .languagepicker li:hover{
@@ -117,7 +140,7 @@ a:focus, a:hover {
 
 .languagepicker a:first-child li {
 	border: none;
-	background: #58008c !important;
+	background: var(--main-color) !important;
 }
 
 .languagepicker a:first-child li:hover {
@@ -158,6 +181,115 @@ a:focus, a:hover {
 .logo-w3layouts h1{
 	margin:0
 }
+
+.publications_item{
+    display: inline-block;
+    margin: 20px 40px;
+    width: 100%;
+}
+
+.publications h4{
+    font-size: 1.4em;
+    margin: 0.5em 1em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: #aaa 1px solid;
+    padding-bottom: 10px;
+}
+
+.publications_journal{
+    margin-left: 10px;
+}
+
+.publications_authors {
+    color: #222;
+    font-size: 1.2em;
+    line-height: 150%;
+    margin-left: 10px;
+}
+
+.publications_item a{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.publications_item a:hover{
+    color: var(--main-color);
+}
+
+.publications_ads{
+    color: #06A;
+}
+
+.publications_arxiv{
+    color: #A00;
+}
+
+.publications_pdf{
+    color: #960;
+}
+
+.publications_empty{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: "Courier New", Courier, monospace;
+    color: #aaa;
+}
+
+.publications_title{
+    color: var(--main-color);
+    font-size: 1.6em;
+    line-height: 130%;
+    font-weight: 300;
+}
+
+.publications_me {
+    font-weight: bold;
+}
+
+.publications_location{
+    font-weight: bold;
+}
+
+.research a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+    text-shadow: 2px 2px #222222;
+	letter-spacing: 5px;
+    display: block;
+    letter-spacing: 2px;
+    border: 1px solid #fff;
+    width: 20%;
+    padding: 1em 0em;
+	background: #000;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 40%;
+	font-family: 'Nunito', sans-serif;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
+.research a:hover {
+    background: var(--main-color);
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
 .banner-agile {
 	background: url(../images/bg2.jpg) no-repeat 0px 0px;
 	background-size: cover;
@@ -220,7 +352,7 @@ a:focus, a:hover {
 	-ms-transition: 0.5s all;
 }
 .banner-info-w3l a:hover {
-    background: #58008c;
+    background: var(--main-color);
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-o-transition: 0.5s all;
@@ -229,7 +361,7 @@ a:focus, a:hover {
 }
 /*-- header-nav --*/
 .nav-agile {
-    background:#58008c;
+    background:var(--main-color);
 }
 .navbar-default {
 	border:none;
@@ -237,7 +369,7 @@ a:focus, a:hover {
 	border-radius: 0;
 	text-align: center !important;
     width: 100%;
-    background:#58008c;
+    background:var(--main-color);
 }
 .navbar-header a.navbar-brand {
 	color: #00BFF3;
@@ -384,9 +516,9 @@ span.glyphicon.glyphicon-search.edit {
 .agile-about-right-img img {
     width: 100%;
     display: block;
-    padding: 2em;
-    margin-left: auto;
-    margin-right: auto;
+    border: var(--main-color) 10px solid;
+    padding: 0;
+    margin: 2.8em auto;
 }
 
 .w3ls-agile-right-img-frontpage{
@@ -395,12 +527,12 @@ span.glyphicon.glyphicon-search.edit {
 
 .agile-about-right-img h3 {
     text-align: center;
-    color: #58008c;
+    color: var(--main-color);
     font-size: 2.5em;
 }
 
 .first-letter{
-    color: #58008c;
+    color: var(--main-color);
 }
 .agile-about-right-img h4 {
     text-align: center;
@@ -417,7 +549,7 @@ padding-top: 15px;
 
 h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3{
     text-align: center;
-    color: #58008c;
+    color: var(--main-color);
     padding-top: 30px;
     font-size: 3em;
     letter-spacing: 2px;
@@ -488,7 +620,7 @@ h3.agile-contact {
 /* Effect 2 */
  .hovicon.effect-2 {
     color: #fff;
-	box-shadow:0 0 0 3px #58008c;
+	box-shadow:0 0 0 3px var(--main-color);
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
     transition: color 0.3s;
@@ -498,7 +630,7 @@ h3.agile-contact {
     left: -2px;
     padding: 2px;
     z-index: -1;
-    background:#58008c;
+    background:var(--main-color);
     -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
     -moz-transition: -moz-transform 0.2s, opacity 0.2s;
     transition: transform 0.2s, opacity 0.2s;
@@ -537,6 +669,10 @@ h3.agile-contact {
 }
 .wthreeskills {
 	background-color: #eee;
+}
+.container-fluid{
+    max-width: 1400px;
+    margin: auto;
 }
 /*-- Tabs --*/
 	.sap_tabs {
@@ -584,8 +720,8 @@ h3.agile-contact {
 
 	.resp-tab-active {
 		text-shadow: none;
-		background-color: #58008c;
-		border-bottom: 1px solid #58008c;
+		background-color: var(--main-color);
+		border-bottom: 1px solid var(--main-color);
 	}
 
 	.resp-tab-active span {
@@ -713,7 +849,7 @@ h3.agile-contact {
 		float: left;
 		left: 100%;
 		padding: 4px 10px 7px 10px;
-		background-color:#58008c;
+		background-color:var(--main-color);
 		-webkit-transform: translateX(-50%) translateY(-30px);
 		-ms-transform: translateX(-50%) translateY(-30px);
 		transform: translateX(-50%) translateY(-30px);
@@ -742,7 +878,7 @@ h3.agile-contact {
 		display: block;
 		border-style: solid;
 		border-width: 5px 5px 0 5px;
-		border-color: #58008c transparent transparent transparent;
+		border-color: var(--main-color) transparent transparent transparent;
 	}
 
 	.b_label {
@@ -766,7 +902,7 @@ h3.agileits-title{
     height: 200px;
     margin: 0px 0;
     text-align: center;
-    border: 5px solid  #58008c;
+    border: 5px solid  var(--main-color);
     -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -799,7 +935,7 @@ h3.agileits-title{
 	-ms-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	-o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    color: #58008c;
+    color: var(--main-color);
     font-size: 2em;
     opacity: 0;
 }
@@ -841,6 +977,7 @@ h3.agileits-title{
 	position: relative;
 }
 
+
 .aitsresumewthree h4.title {
 	width: 15%;
 }
@@ -870,7 +1007,7 @@ ul#myList {
 	width: 14%;
 	margin-right: 1em;
 	display: inline-block;
-	border: 1px solid #58008c;
+	border: 1px solid var(--main-color);
 	font-size: 1.1em;
 	position: relative;
 	transition: 0.5s all ease;
@@ -883,7 +1020,7 @@ ul#myList {
 }
 
 #loadMore:hover {
-	background-color: #58008c;
+	background-color: var(--main-color);
 	color: #fff;
 }
 
@@ -895,7 +1032,7 @@ ul#myList {
 	width: 14%;
 	margin-right: 1em;
 	display: inline-block;
-	border: 1px solid #58008c;
+	border: 1px solid var(--main-color);
 	font-size: 1.1em;
 	position: relative;
 	/*--w3layouts--*/
@@ -910,7 +1047,7 @@ ul#myList {
 }
 
 #showLess:hover {
-	background-color: #58008c;
+	background-color: var(--main-color);
 	color: #fff;
 }
 
@@ -928,19 +1065,19 @@ li.aitsaitsresumewthreeli-1 {
 /*-- Work --*/
 .work-left {
 	text-align: right;
-	border-right: 1px solid #58008c;
+	border-right: 1px solid var(--main-color);
 	padding: 1em 13px 0 0;
 }
 
 .work-right {
-	border-left: 1px solid #58008c;
+	border-left: 1px solid var(--main-color);
 	padding: 1em 0 2em 13px;
 	text-align: left;
 }
 
 .work-info h4 {
 	font-size: 1.2em;
-	background:#58008c;
+	background:var(--main-color);
 	display: inline-block;
 	padding: 12px 30px;
 	color: #fff;
@@ -955,7 +1092,7 @@ li.aitsaitsresumewthreeli-1 {
 	right: -14px;
 	border-style: solid;
 	border-width: 10px 0 10px 16px;
-	border-color: transparent transparent transparent #58008c;
+	border-color: transparent transparent transparent var(--main-color);
 }
 .work-info h5 {
 	font-size: 16px;
@@ -1056,6 +1193,7 @@ ul.simplefilter {
     height: 300px;
 }
 /*-- contact-starts-here --*/
+
 .contact-left-agile {
     float: left;
     width: 50%;
@@ -1064,7 +1202,6 @@ ul.simplefilter {
 .contact-right-w3l {
     float: right;
     width: 50%;
-	background: #eee;
 }
 input[type="text"], input[type="email"], .contact-right-w3l textarea{
     width: 80%;
@@ -1083,7 +1220,7 @@ input[type="submit"] {
     font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background: #58008c;
+    background: var(--main-color);
     color: white;
     border: none;
     outline: none;
@@ -1231,7 +1368,7 @@ textarea {
 /*project stars here*/
 
 .project-row-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1239,12 +1376,11 @@ textarea {
 }
 
 .project-2 {
-    background: #f6f6f6;
-    margin-top: 20px;
+    background: #eee;
 }
 
 .project-last{
-	background: url(../images/ser.jpg) no-repeat 0px 0px;
+	background: url(../images/ser2.jpg) no-repeat 0px 0px;
     background-size: cover;
 }
 
@@ -1274,11 +1410,12 @@ textarea {
 }
 
 .project-row-handle:hover{
-    color: #58008c;
-    background: #eee;
+    color: var(--main-color);
+    background: #ddd;
 }
 .project-row.open .project-row-handle {
-   color:#58008c;
+   color:var(--main-color);
+   background: #ccc;
    padding-top: 1em;
    padding-left: 30px;
 }
@@ -1301,6 +1438,9 @@ textarea {
 	}
 }
 @media(max-width: 1600px){
+    .form-container {
+        padding-top: 65%;
+    }
 	.banner-info-w3l  {
 		padding:2.5em 0 0;
 	}
@@ -1317,6 +1457,9 @@ textarea {
 	}
 }
 @media(max-width: 1366px){
+    .form-container {
+        padding-top: 72.5%;
+    }
 	.banner-agile {
 		min-height: 316px;
 	}
@@ -1352,6 +1495,9 @@ textarea {
 	}
 }
 @media(max-width: 1280px){
+    .form-container {
+        padding-top: 75%;
+    }
     .agile-about-right-img img {
         margin-top: 5em;
     }
@@ -1383,6 +1529,9 @@ textarea {
     }
 }
 @media(max-width: 1080px){
+    .form-container {
+        padding-top: 85%;
+    }
     .agile-about-right-img img {
         margin-top: 0em;
     }
@@ -1413,9 +1562,51 @@ textarea {
 	}
 }
 @media(max-width: 1050px){
-
+    .form-container {
+        padding-top: 80%;
+    }
 }
 @media(max-width: 1024px){
+    .publications_item{
+        margin: 18px 35px;
+        padding-right: 3em;
+    }
+
+    .publications h4{
+        font-size: 1.1em;
+        margin: 1em 1em;
+        padding-bottom: 10px;
+    }
+
+    .publications_journal{
+        margin-left: 0.5em;
+        font-size: 1em;
+    }
+
+    .publications_authors {
+        font-size: 1.1em;
+        margin-left: 0.3em;
+    }
+
+    .publications_item a{
+        font-size: 1em;
+    }
+
+    .publications_empty{
+        font-size: 1em;
+    }
+
+    .publications_title{
+        font-size: 1.4em;
+    }
+    
+    .publications_me{
+        font-size: 1.1em;
+    }
+
+    .form-container {
+        padding-top: 85%;
+    }
 	h3.w3l_head, h3.agileits-title, h3.agile-title, h3.agile-contact, div#wthreeskills h3, .aitsresumewthree-tag h3, .wthreeskills h3 {
 		padding-top: 10px;
 	}
@@ -1469,6 +1660,9 @@ textarea {
 	}
 }
 @media(max-width: 991px){
+    .form-container {
+        padding-top: 90%;
+    }
     .agile-about-right-img img {
         padding: 0;
         margin-top: 0;
@@ -1566,6 +1760,9 @@ textarea {
 
 }
 @media(max-width: 800px){
+    .form-container {
+        padding-top: 95%;
+    }
     .languagepicker {
         top: 50px;
     }
@@ -1788,6 +1985,43 @@ textarea {
 	}
 }
 @media(max-width: 640px){
+    .publications_item{
+        margin: 15px 30px;
+        padding-right: 3em;
+    }
+
+    .publications h4{
+        font-size: 1em;
+        margin: 0.8em 0.9em;
+        padding-bottom: 9px;
+    }
+
+    .publications_journal{
+        margin-left: 0.5em;
+        font-size: 0.9em;
+    }
+
+    .publications_authors {
+        font-size: 1em;
+        margin-left: 0.3em;
+    }
+
+    .publications_item a{
+        font-size: 0.9em;
+    }
+
+    .publications_empty{
+        font-size: 0.9em;
+    }
+
+    .publications_title{
+        font-size: 1.2em;
+    }
+    
+    .publications_me{
+        font-size: 1em;
+    }
+
     .banner-info-w3l a {
         width: 35%;
         margin-left: 65%;
@@ -1944,6 +2178,57 @@ textarea {
 	}
 }
 @media(max-width: 480px){
+    .publications_item{
+        margin: 10px 20px;
+        padding-right: 2em;
+    }
+
+    .publications h4{
+        font-size: 0.8em;
+        margin: 0.6em 0.7em;
+        padding-bottom: 8px;
+    }
+
+    .publications_journal{
+        margin-left: 0.3em;
+        font-size: 0.7em;
+    }
+
+    .publications_authors {
+        font-size: 0.9em;
+        margin-left: 0.3em;
+    }
+
+    .publications_item a{
+        font-size: 0.8em;
+        margin-left: 0.3em;
+        padding-right: 1em;
+    }
+
+    .publications_item a:hover{
+        color: var(--main-color);
+    }
+
+    .publications_empty{
+        font-size: 0.8em;
+        margin-left: 0.3em;
+    }
+
+    .publications_title{
+        font-size: 1em;
+        line-height: 130%;
+        font-weight: 300;
+    }
+    
+    .publications_me{
+        font-size: 0.9em;
+    }
+
+    .research a {
+        font-size: 1.2em;
+        width: 70%;
+        margin-left: 15%;
+    }
     .languagepicker {
         top: 40px;
     }
@@ -2232,6 +2517,11 @@ textarea {
 /*	}*/
 }
 @media(max-width: 384px){
+    .research a {
+        font-size: 1em;
+        width: 75%;
+        margin-left: 12.5%;
+    }
     .agile-about-right-img h3 {
         font-size: 1.5em;
     }
